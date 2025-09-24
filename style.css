@@ -1,0 +1,385 @@
+@font-face {
+    font-family: DMSans-Medium;
+    src: url(Fonts/DMSans-Medium.ttf);
+}
+@font-face {
+    font-family: DMSans-italic;
+    src: url(Fonts/DMSans-MediumItalic.ttf);
+}
+@font-face {
+    font-family: DMSans regular;
+    src: url(Fonts/DMSans-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --Purple-100: hsl(254, 88%, 90%);
+    --Purple-500: hsl(256, 67%, 59%);
+    --Yellow-100: hsl(31, 66%, 93%);
+    --Yellow-500: hsl(39, 100%, 71%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-block-size: 100svh;
+    font-size: 1.8rem;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--White);
+    background: var(--White);
+    font-family: 'DMSans regular', sans-serif;
+}
+/* Whole card & General styles */
+main{
+    display: grid;
+    gap: 3rem;
+    margin: 4rem auto;
+    grid-template-areas: 
+        'one'
+        'two'
+        'three'
+        'four'
+        'five'
+        'six'
+        'seven'
+        'eight'
+    ;
+}
+.card{
+    max-width: 70rem;
+    color: var(--Black);
+    border-radius: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    overflow: hidden;
+}
+/* Images */
+.imagess{
+    max-width: 30rem;
+}
+.imagess img{
+    width: 100%;
+}
+/* Individual Cards */
+.card1{
+    background: var(--Purple-500);
+    color: var(--White);
+    text-align: center;
+    font-size: 2rem;
+    padding: 4rem;
+    grid-area: one;
+}
+/* Image */
+.five-stars{
+    margin: 2rem auto 0 auto;
+    width: 22rem;
+}
+.five-stars p{
+    margin: 0.5rem 0 0 0;
+
+}
+/* coloured word */
+.orange-txt{
+    color: var(--Yellow-500);
+}
+/* italicized words */
+.italico{
+    font-family: 'DMSans-italic', sans-serif;
+}
+/* very large fonts */
+.Large-font{
+    font-size: 4.2rem;
+    font-family:'DMSans-Medium', sans-serif;
+    line-height: 1;
+    text-wrap: balance;
+}
+/* Card 2 */
+.card2{
+    background: var(--white);
+    box-shadow: 0rem 0rem 8rem 1rem rgba(72 85 106 /25%);
+    padding: 1.5rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: var(--Black);
+    line-height: 1;
+    text-align: left;
+    grid-area: two;
+}
+/* Image */
+.insta{
+    width: 35rem;
+    order: -1;
+
+}
+.insta img {
+    filter: drop-shadow(0 0 .5rem hsl(0 0% 0% / .1));
+    border-radius: 100vw;
+    padding: .5rem;
+}
+.card2 img{
+    margin-bottom: 1rem;
+}
+.card3{
+    background: var(--Yellow-500);
+    padding: 2rem 2rem 0 2rem;
+    line-height: 1;
+    font-size: 3rem;
+    font-weight: 600;
+    grid-area: three;
+}
+.card3 header{
+    margin-bottom: 2rem;
+}
+/* Image */
+.calender{
+    width: 20rem;
+    overflow: hidden;
+    margin-bottom: -2.5rem;
+}
+/* card 4 */
+.card4{
+    font-family: 'DMSans-Medium', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 3rem 2rem;
+    background: var(--Purple-100);
+    grid-area: four;
+}
+.card4 header{
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+/* Image */
+.card4 .chart{
+    margin: 2rem 0 1.5rem 0;
+}
+.card5{
+    background: var(--Purple-500);
+    color: var(--White);
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'DMSans-Medium', sans-serif;
+    padding:  2rem 2rem;
+    line-height: 1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-area: five;
+}
+/* Image */
+.growth-chart{
+    width: 23rem;
+}
+
+.card6{
+    background: var(--white);
+    box-shadow: 0rem 0rem 8rem 1rem rgba(72 85 106 /25%);
+    padding: 2rem;
+    font-family: 'DMSans-Medium', sans-serif;
+    font-size: 2rem;
+    color: var(--Black);
+    line-height: 1;
+    text-align: left;
+    grid-area: six;
+}
+.card6 header{
+    margin: 0 0 2.3rem 0;
+}
+.big-font{
+    font-family: 'DMSans regular', sans-serif;
+    margin: 0 0 1.5rem 0;
+    font-size: 5rem;
+    font-weight: 600;
+}
+/* Image */
+.avatarrs{
+    width: 20rem;
+}
+.card7{
+    background: var(--Yellow-100);
+    padding: 3rem;
+    line-height: 1;
+    font-size: 2.8rem;
+    font-family: 'DMSans-Medium', sans-serif;
+    font-weight: 600;
+    grid-area: seven;
+}
+.card7 p{
+    margin: 0 0 2rem 0;
+}
+/* coloured text */
+.quicker{
+    color: var(--Purple-500);
+    font-family: 'DMSans-italic', sans-serif;
+}
+/* Image */
+.create-post{
+    width: 19rem;
+}
+
+.card8{
+    background: var(--Yellow-500);
+    padding: 3rem 3rem 2rem 3rem;
+    line-height: 1;
+    font-size: 2.8rem;
+    font-weight: 600;
+    grid-area: eight;
+}
+.card8 p{
+    margin: 0 0 2rem 0;
+}
+/* Image */
+.chat{
+    width: 23rem;
+}
+/* Media-Q Tablets */
+@media screen and (min-width:48rem) and (max-width: 60rem) {
+    main {
+        padding: 4rem;
+        grid-template-areas:
+            "one one"
+            "two three"
+            "four four"
+            "eight six"
+            "eight seven"
+            "five five"
+        ;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    .card2 {
+        font-size: 3rem;
+    }
+
+    /* card2 image */
+    .insta img {
+        width: 40rem;
+    }
+
+    .card4 {
+        font-size: 2.5rem;
+    }
+
+    .card8 {
+        font-size: 3.5rem;
+        align-content: center;
+    }
+
+    /* card7 img */
+    .chat img {
+        width: 27rem;
+    }
+
+    /* Card 5 */
+    .card5 {
+        grid-template-columns: 1fr 1fr;
+        font-size: 3rem;
+    }
+
+    /* card5 img */
+    .growth-chart {
+        padding: 0 0 0 2rem;
+        width: 30rem;
+    }
+}
+
+/* Media-Desktop */ 
+@media (min-width:64rem) {
+main{
+    max-width: 100rem;
+    grid-template-areas: 
+   "seven one one four"
+   "seven two three four"
+   "eight two three four"
+   "eight six five five"
+   ;
+}
+.card{
+    margin: 0;
+}
+.card1{
+    font-size: 1.4rem;
+}
+/* card1 image */
+.five-stars img{
+    width: 15rem;
+}
+.card2{
+    font-size: 2.7rem;
+}
+/* card 2 image */
+.insta img{
+    width: 28rem;
+}
+.card3{
+    font-size: 3rem;
+}
+
+/* card3 Image^ */
+.calender img{
+    width: 18.5rem;
+    margin: 2rem 0 -6rem 0;
+}
+/* card4 */
+.card4{
+    justify-content: left;
+    text-align: start;
+    font-size: 1.6rem;
+    padding-left: 3rem;
+    line-height: 1.2;
+}
+/* card4 img */
+.chart img{
+    width: 32rem;
+    margin-left: 6rem;
+
+}
+.card5{
+    grid-template-columns: 1fr 1fr;
+    text-align: start;
+    font-size: 2.9rem;
+}
+/* card5 img */
+.growth-chart  img{
+    width: 21rem;
+}
+.card6{
+    font-size: 1.5rem;
+    align-content: center;
+}
+.avatarrs img{
+    padding: 2rem 0 0 0;
+    width: 16rem;
+}
+.card7{
+    align-content: center;
+    font-size: 3rem;
+}
+.card8{
+    font-size: 2.7rem;
+    padding: 2rem;
+}
+
+/* card8 Image^ */
+.chat{
+    width: 21rem;
+    padding-top: 2rem;
+}
+
+}
