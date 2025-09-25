@@ -248,7 +248,8 @@ main{
 /* Media-Q Tablets */
 @media screen and (min-width:48rem) and (max-width: 63rem) {
     main {
-        padding: 4rem;
+        max-width: 70rem;
+        /* padding: 4rem; */
         grid-template-areas:
             "one one"
             "two three"
