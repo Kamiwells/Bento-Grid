@@ -246,7 +246,7 @@ main{
     width: 23rem;
 }
 /* Media-Q Tablets */
-@media screen and (min-width:48rem) and (max-width: 60rem) {
+@media screen and (min-width:48rem) and (max-width: 63rem) {
     main {
         padding: 4rem;
         grid-template-areas:
@@ -258,47 +258,41 @@ main{
             "five five"
         ;
     }
-
+/* card1 */
     .card {
         margin: 0;
     }
-
     .card2 {
         font-size: 3rem;
     }
-
-    /* card2 image */
+/* card2 image */
     .insta img {
         width: 40rem;
     }
-
-    .card4 {
-        font-size: 2.5rem;
+/* card4 */
+        .card4 {
+            font-size: 2.5rem;
+        }
+/* Card 5 */
+    .card5 {
+    grid-template-columns: 1fr 1fr;
+    font-size: 3rem;
+}
+/* card7 img */
+    .chat img {
+        width: 27rem;
     }
-
+/* card8 */
     .card8 {
         font-size: 3.5rem;
         align-content: center;
     }
-
-    /* card7 img */
-    .chat img {
-        width: 27rem;
-    }
-
-    /* Card 5 */
-    .card5 {
-        grid-template-columns: 1fr 1fr;
-        font-size: 3rem;
-    }
-
-    /* card5 img */
+/* card5 img */
     .growth-chart {
         padding: 0 0 0 2rem;
         width: 30rem;
     }
 }
-
 /* Media-Desktop */ 
 @media (min-width:64rem) {
 main{
@@ -330,7 +324,6 @@ main{
 .card3{
     font-size: 3rem;
 }
-
 /* card3 Image^ */
 .calender img{
     width: 18.5rem;
@@ -348,7 +341,6 @@ main{
 .chart img{
     width: 32rem;
     margin-left: 6rem;
-
 }
 .card5{
     grid-template-columns: 1fr 1fr;
@@ -375,7 +367,6 @@ main{
     font-size: 2.7rem;
     padding: 2rem;
 }
-
 /* card8 Image^ */
 .chat{
     width: 21rem;
